@@ -18,8 +18,6 @@ AWS is a comprehensive, easy to use computing platform offered Amazon. The platf
 * Global leader
 * Improved Productivity
 
-
-
 ---
 
 # It's service
@@ -62,7 +60,9 @@ Elastic Block Store (EBS) is an easy to use, high-performance block storage serv
 Key pair, consisting of a private key and a public key, is a set of security credentials that you use to prove your identity when connecting to an instance. Amazon EC2 stores the public key, and you store the private key. You use the private key, instead of a password, to securely access your instances.
 Security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance. … If you don't specify a security group, Amazon EC2 uses the default security group.
 
-#What is terraform?
+---
+
+# What is terraform?
 
 Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
 Configuration files describe to Terraform the components needed to run a single application or your entire datacenter. Terraform generates an execution plan describing what it will do to reach the desired state, and then executes it to build the described infrastructure. As the configuration changes, Terraform is able to determine what changed and create incremental execution plans which can be applied.
