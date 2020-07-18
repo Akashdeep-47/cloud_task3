@@ -104,14 +104,14 @@ resource "tls_private_key" "key4" {
 }
 
 resource "local_file" "key5" {
-	content = "${tls_private_key.key1.private_key_pem}"
+	content = "${tls_private_key.key4.private_key_pem}"
 	filename = "mysql_key.pem"
 	file_permission = 0400
 }
 
 resource "aws_key_pair" "key6" {
 	key_name = "mysql_key"
-	public_key = "${tls_private_key.key1.public_key_openssh}"
+	public_key = "${tls_private_key.key4.public_key_openssh}"
 }
 
 # -- Creating Security Groups for wordpress
